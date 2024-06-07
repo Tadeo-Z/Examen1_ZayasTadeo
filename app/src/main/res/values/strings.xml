@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">E1ZayasTadeo</string>
+    <string name="tipping_n_Saving">Tipping &amp; saving</string>
+    <string name="ten_percentage">10%</string>
+    <string name="fiftheen_percentage">15%</string>
+    <string name="twenty_percentage">20%</string>
+    <string name="twentyfive_percentage">25%</string>
+    <string name="thirty_percentage">30%</string>
+    <string name="fourthy_percentage">40%</string>
+    <string name="tip">TIP</string>
+    <string name="discount">DISCOUNT</string>
+    <string name="original_price">ORIGINAL PRICE</string>
+    <string name="percentage">PERCENTAGE</string>
+    <string name="total">TOTAL</string>
+</resources>

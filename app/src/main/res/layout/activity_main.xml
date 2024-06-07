@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipping_n_Saving"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <EditText
+        android:id="@+id/editTextOriginalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="78dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="58dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/ten_percentage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_20"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="58dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/twenty_percentage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/button_15"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_40"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/fourthy_percentage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_30"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="137dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/thirty_percentage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_25"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="58dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/twentyfive_percentage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="311dp" />
+
+    <Button
+        android:id="@+id/button_15"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/fiftheen_percentage"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/button_10"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewPercentage"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotal"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_discount"
+        android:layout_width="102dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/discount"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTotal"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_tip"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/light_gray"
+        android:text="@string/tip"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTotal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewOgPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:text="@string/original_price"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="104dp" />
+
+    <TextView
+        android:id="@+id/textViewPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="211dp"
+        android:text="@string/percentage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextPercentage"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
