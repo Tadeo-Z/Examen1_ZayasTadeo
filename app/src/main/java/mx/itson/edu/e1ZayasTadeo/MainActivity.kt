@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
-    lateinit var ETOgPRice: EditText
+    lateinit var ETOgPrice: EditText
     lateinit var ETPercentaje: TextView
     lateinit var ETTotal: TextView
     var selectedPercentage: Double = 0.0
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        ETOgPRice = findViewById(R.id.editTextOriginalPrice)
+        ETOgPrice = findViewById(R.id.editTextOriginalPrice)
         ETPercentaje = findViewById(R.id.editTextPercentage)
         ETTotal = findViewById(R.id.editTextTotal)
 
@@ -42,12 +42,12 @@ class MainActivity : AppCompatActivity() {
             findViewById<Button>(R.id.button_40),
         )
 
-        percentageButtons.forEach{
-            button -> button.setOnClickListener{
-                val percentage = button.text.toString().removeSuffix("%").toDouble()
-            selectedPercentage = percentage / 100
-            updatePercentage()
-            }
+        percentageButtons.forEach{ button ->
+                button.setOnClickListener{
+                    val percentage = button.text.toString().removeSuffix("%").toDouble()
+                    selectedPercentage = percentage / 100
+                    updatePercentage()
+                }
         }
 
         findViewById<Button>(R.id.button_tip).setOnClickListener{
@@ -66,7 +66,6 @@ class MainActivity : AppCompatActivity() {
                 updatePercentage()
             }
         })
-
     }
 
     fun updatePercentage(){

@@ -90,14 +90,15 @@
         android:id="@+id/button_25"
         android:layout_width="73dp"
         android:layout_height="51dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="58dp"
         android:backgroundTint="@color/light_gray"
         android:text="@string/twentyfive_percentage"
         android:textColor="@color/black"
         android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/button_20"
         app:layout_constraintTop_toTopOf="@+id/editTextOriginalPrice"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="311dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_15"
@@ -171,11 +172,12 @@
         android:id="@+id/textViewOgPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
         android:layout_marginTop="89dp"
         android:text="@string/original_price"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="104dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewPercentage"
